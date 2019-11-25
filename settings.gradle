@@ -1,0 +1,3 @@
+include ':player_core'
+include ':player_lib'
+include ':app'

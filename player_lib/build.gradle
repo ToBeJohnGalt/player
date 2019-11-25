@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+apply from: '../gradle/random.gradle'
+
+android {
+    compileSdkVersion externalCompileSdkVersion
+    buildToolsVersion externalBuildToolsVersion
+    defaultConfig {
+        minSdkVersion externalMinSdkVersion
+        targetSdkVersion externalTargetSdkVersion
+        versionCode 470
+        versionName "4.7.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a"
+        }
+    }
+}
+dependencies {
+    api project(':player_core')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.3'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.aliyun.dpa:oss-android-sdk:2.9.2'
+    implementation 'com.alivc.conan:AlivcConan:0.9.5.1'
+    implementation 'com.github.ctiao:DanmakuFlameMaster:0.9.25'
+    implementation 'com.aliyun.video.android:core:1.2.1'
+}

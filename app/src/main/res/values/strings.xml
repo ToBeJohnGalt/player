@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="join_default_live">观看直播</string>
+    <string name="scan_live_qr_code">扫描直播二维码</string>
+    <string name="input_live_link">输入直播链接</string>
+    <string name="confirm">确认</string>
+</resources>

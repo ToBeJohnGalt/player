@@ -1,0 +1,23 @@
+android {
+    signingConfigs {
+        tony_dev_sign {
+            keyAlias 'tony_dev_sign'
+            keyPassword 'tony_dev_sign'
+            storeFile file("$rootDir/tony_dev_sign.jks")
+            storePassword 'tony_dev_sign'
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            signingConfig signingConfigs.tony_dev_sign
+        }
+
+        release {
+            signingConfig signingConfigs.tony_dev_sign
+        }
+    }
+
+
+}

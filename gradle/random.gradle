@@ -1,0 +1,14 @@
+android {
+    packagingOptions {
+        exclude('META-INF/LICENSE')
+        exclude('META-INF/beans.xml')
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
